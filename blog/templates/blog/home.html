@@ -2,7 +2,12 @@
 
 {% block content %}
     <div class="container">
-
+        <div class="post-entry">
+            <h1 itemprop="headline name" class="entry-title">The FirstSiteGuide Blog</h1>
+            <p>Welcome to the FirstSiteGuide blog where you will find everything you need to kn
+            ow about blogging. It doesn’t matter if you’re an experienced blogger or a total
+            beginner, we cover topics of all levels.</p>
+        </div>
         <!-- Show this section only for User Blog view -->
         {% if first_name or last_name %}
             <div class="jumbotron">
