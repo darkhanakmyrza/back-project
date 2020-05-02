@@ -1,14 +1,14 @@
 from django.urls import path
 
 from blog.views.comment import CommentCreate
-from blog.views.home import home
+from blog.views.home import home, about_us
 from blog.views.post import PostView, PostCreate, PostUpdate, PostDelete
 
 app_name = 'blog'
 urlpatterns = [
     # ex: /blog/
     path('', home, name='home'),
-    # ex: /blog/dusan
+    # ex: /blog/darkhanakmyrza
     path('<str:username>', home, name='user_posts'),
     # ex: /blog/post/5/
     path('post/<int:pk>/', PostView.as_view(), name='post'),
@@ -19,5 +19,7 @@ urlpatterns = [
     # ex: /blog/post/5/delete/
     path('post/<int:pk>/delete/', PostDelete.as_view(), name='delete_post'),
     # ex: /blog/post/5/comment/
-    path('post/<int:pk>/comment/', CommentCreate.as_view(), name='create_comment')
+    path('post/<int:pk>/comment/', CommentCreate.as_view(), name='create_comment'),
+
+    path('about/', about_us, name='about' ),
 ]

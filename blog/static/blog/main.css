@@ -5,7 +5,10 @@ h1 {
 h2 {
     color: #FF0000;
 }
+.container1{
+    margin-left: 200px;
 
+}
 footer {
     margin-top: 60px;
 }

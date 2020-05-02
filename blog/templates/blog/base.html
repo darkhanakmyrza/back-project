@@ -9,7 +9,8 @@
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
           rel="stylesheet" media="screen"/>
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}"/>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+   <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}"/>
 
 </head>
 <body>
@@ -19,6 +20,7 @@
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="{% url 'blog:home' %}">Blog App</a>
+            <a class="navbar-brand" href="{% url 'blog:about' %}">About us</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse navbar-right">
             <!-- show registration only if user is not yet authenticated -->
