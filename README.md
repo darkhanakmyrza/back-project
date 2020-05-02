@@ -2,7 +2,7 @@
 
 ## About
 
-This is a demo project for practicing Django.
+<!-- This is a demo project for practicing Django.
 The idea was to build some basic blogging platform.
 
 It was made using **Python 3.6** + **Django** and database is **SQLite**.
@@ -14,9 +14,9 @@ There is a login and registration functionality included.
 User has his own blog page, where he can add new blog posts. 
 Every authenticated user can comment on posts made by other users.
 Home page is paginated list of all posts.
-Non-authenticated users can see all blog posts, but cannot add new posts or comment.
-
-App is covered with tests.
+Non-authenticated users can see all blog posts, but cannot add new posts or comment. -->
+<!-- 
+App is covered with tests. -->
 
 ## Prerequisites
 
@@ -74,7 +74,7 @@ $ chmod +x scripts/run.sh
 $ scripts/run.sh
 ```
 
-### Docker
+<!-- ### Docker
 
 It is also possible to run the blog app using docker:
 
@@ -85,7 +85,7 @@ $ docker build -t reljicd/django-blog -f docker\Dockerfile .
 
 Run the Docker container:
 ```bash
-$ docker run --rm -i -p 8000:8000 reljicd/django-blog
+$ docker run --rm -i -p 8000:8000 reljicd/django-blog -->
 ```
 
 #### Helper script
