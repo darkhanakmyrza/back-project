@@ -1,14 +1,12 @@
 {% extends "blog/base.html" %}
-<link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+
 {% block content %}
     <div class="container">
-        <div class="poost">
         <div class="post-entry">
-            <h1 itemprop="headline name" class="entry-title" >The FirstSiteGuide Blog</h1>
-            <p>Welcome to the First Site Guide blog where you will find everything <br> you need to kn
-            ow about blogging. <br> It doesn’t matter if you’re an experienced blogger or a total
-            <br> beginner, we cover topics of all levels.</p>
-        </div>
+            <h1 itemprop="headline name" class="entry-title">The FirstSiteGuide Blog</h1>
+            <p>Welcome to the FirstSiteGuide blog where you will find everything you need to kn
+            ow about blogging. It doesn’t matter if you’re an experienced blogger or a total
+            beginner, we cover topics of all levels.</p>
         </div>
         <!-- Show this section only for User Blog view -->
         {% if first_name or last_name %}
@@ -18,7 +16,7 @@
         {% endif %}
 
         <!-- Show List of Posts -->
-        <div class="starter-template" style="margin-top: -10px;">
+        <div class="starter-template">
             {% for post in posts %}
                 <div class="panel">
                     <div class="panel-heading">
