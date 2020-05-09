@@ -215,7 +215,8 @@
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="{% url 'blog:home' %}">Blog App</a>
-            <a class="navbar-brand" href="{% url 'blog:about' %}">About us</a>
+            <a class="navbar-brand" href="{% url 'blog:subscribe' %}">About us</a>
+            <a class="navbar-brand" href="{% url 'blog:contact' %}">Contact</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse navbar-right">
             <!-- show registration only if user is not yet authenticated -->
@@ -261,11 +262,14 @@
     <div class="jumbotron text-center">
       <h1>Blog site</h1> 
       <p>We specialize on your work skills</p> 
-      <form>
-        <div class="input-group">
-          <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+          
+          <input type="email" class="form-control border" name="email" id="contactemail" required="" size="50" placeholder="Email Address">
+          
           <div class="input-group-btn">
-            <button type="button" class="btn btn-danger">Subscribe</button>
+            <input type="submit" name="subscribe" class="btn btn-danger" value="submit">
           </div>
         </div>
       </form>
