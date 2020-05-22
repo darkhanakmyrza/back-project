@@ -1,18 +1,18 @@
-Проект по Backend programming 
+<h1>Проект по Backend programming </h1>
 
-Как активировать
+<h2>Как активировать</h2>
 
-для windows :
+<h3>для windows :</h3>
 
-git clone https://github.com/darkhanakmyrza/back-project.git
-venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py runserver
+<p>git clone https://github.com/darkhanakmyrza/back-project.git</p>
+<p>venv\Scripts\activate</p>
+<p>pip install -r requirements.txt</p>
+<p>python manage.py runserver</p>
   
-для linux :
+<h3>для linux :</h3>
 
-git clone https://github.com/darkhanakmyrza/back-project.git
-virtualenv env
-source env/bin/activate
-pip3 install -r requirements.txt
-python3 manage.py runserver
+<p>git clone https://github.com/darkhanakmyrza/back-project.git</p>
+<p>virtualenv env</p>
+<p>source env/bin/activate</p>
+<p>pip3 install -r requirements.txt</p>
+<p>python3 manage.py runserver</p>
