@@ -125,8 +125,8 @@ ACCOUNT_LOGOUT_REDIRECT_URL = "/blog"
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'blogbacksdu@gmail.com'
-EMAIL_HOST_PASSWORD = 'qmpzAaa01'
+EMAIL_HOST_USER = 'email'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
