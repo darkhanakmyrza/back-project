@@ -1,4 +1,4 @@
-<h1>Проект по Backend programming </h1>
+<h1>Project for Backend programming </h1>
 
 <h2>Как активировать</h2>
 
